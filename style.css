@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@keyframes efect{
+  100%{
+   transform: rotate(360deg);
+  }
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.efect{
+  background:linear-gradient(to right, #13557a, #244c86,#7750e2) ;;
+  animation-name: efect;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: absolute;
+  width: 150%;
+  height: 180%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  max-width: 100vw;
+  min-width: 70vw;
+  max-height: 90vh;
+  min-height: 40vh;
+  overflow: hidden;
+}
+
+div footer {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+div#instagram span div {
+  background: linear-gradient(
+    to left,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c
+  );
+  height: 50px;
+  width: 50px;
+  clip-path: polygon(0 0, 0 100%, 50px 0);
+}
+
+
+div#whatsapp span div {
+  background-color: green;
+  height: 50px;
+  width: 50px;
+  clip-path: polygon(0 0, 0 100%, 50px 0);
+}
+div#youtube span div {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  clip-path: polygon(0 0, 0 100%, 50px 0);
+}
+div#linkedin span div {
+  background-color: rgba(14, 120, 170, 0.984);
+  height: 50px;
+  width: 50px;
+  clip-path: polygon(0 0, 0 100%, 50px 0);
+}
+
+div#instagram {
+  height: 600px;
+  width: 50px;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  transition: 0.6s ease;
+  z-index: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+}
+div#whatsapp {
+  height: 600px;
+  width: 50px;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  transition: 0.6s ease;
+  z-index: 2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+}
+div#youtube {
+  height: 600px;
+  width: 50px;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  transition: 0.6s ease;
+  z-index: 3;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+}
+div#linkedin {
+  height: 600px;
+  width: 54px;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  transition: 0.6s ease;
+  z-index: 4;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+}
+
+
+#linkedin:hover,#youtube:hover,#whatsapp:hover,#instagram:hover {
+  width: 500px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+div:not(.mrca):hover footer {
+  display: block;
+}
+
+div#instagram footer a {
+  background: linear-gradient(
+    to left,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c
+  );
+}
+div#whatsapp footer a {
+  background-color: green;
+}
+div#youtube footer a {
+  background-color: #ff0000;
+}
+div#linkedin footer a {
+  background-color: rgba(14, 120, 170, 0.984);
+}
+div#instagram footer a:hover {
+  background: linear-gradient(
+    to left,
+    rgb(64, 93, 230, 0.8),
+    rgb(88, 81, 219, 0.8),
+    rgb(131, 58, 180, 0.8),
+    rgb(193, 53, 132, 0.8),
+    rgb(225, 48, 108, 0.8)
+  );
+  color: black;
+}
+div#whatsapp footer a:hover {
+  background-color: rgb(0, 128, 0, 0.8);
+  color: black;
+}
+div#youtube footer a:hover {
+  background-color: #ff0000ad;
+  color: black;
+}
+
+p {
+  transform: scale(0);
+  transition: 0.5s ease;
+}
+
+div#instagram:hover p {
+  transform: scale(1);
+}
+div#whatsapp:hover p {
+  transform: scale(1);
+}
+div#youtube:hover p {
+  transform: scale(1);
+}
+div#linkedin:hover p {
+  transform: scale(1);
+}
+
+div#linkedin footer a:hover {
+  background-color: rgba(14, 121, 170, 0.8);
+  color: black;
+}
+
+.linkedin, .instagram, .youtube, .whatsapp {
+  text-align: center;
+  font-family: "Bungee Spice", sans-serif;
+  transform-origin: 50%;
+  font-size: 1.2rem;
+}
+
+.intro{
+  padding: 50px;
+  line-height: 1.5;
+  letter-spacing: 5;
+  text-align: justify;
+}
+
